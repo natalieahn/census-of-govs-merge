@@ -1,0 +1,32 @@
+The main historic data files were publicly available at the following locations at the time of writing.
+(Note: This is an unaffiliated project; the data files are owned and maintained by the U.S. Census Bureau and may be subject to change.)
+
+1972 - 2010 (Finance), 1972 - 2012 (Employment):
+https://www2.census.gov/pub/outgoing/govs/special60/
+_IndEmp1972-2010.zip
+_IndFin_1967-2012.zip
+
+Unzip both files into the directory containing the files in repo, or revise the filepath "cog_dir" in cog_merge.py to the location
+where you've downloaded the Census of Governments data files.
+
+2011 - 2015 (Finance):
+https://www.census.gov/govs/local/historical_data.html
+
+It should be possible to download individual data files for each of the most recent years from this site.
+Select the desired year from the drop-down menu under "1992 - 2015". (E.g. 2015 takes you to the latest year data at
+https://www.census.gov/govs/local/; 2014 takes you to https://www.census.gov//govs/local/historical_data_2014.html
+at the time this was written.)
+
+On each year page, toward the bottom of the main box under Downloadable Data, click on "Individual Unit File - Public Use Format",
+or the closest option for individual unit files, to obtain the full dataset broken down by city/county/district/etc. (E.g. for 2015,
+this link should initiate downloading the file https://www2.census.gov/govs/local/2015_Individual_Unit_file.zip; for 2014,
+https://www2.census.gov/govs/local/2014_Individual_Unit_File_Revised.zip, etc.)
+
+Unzip these files to a directory labeled FinanceDataFiles_2013-2014 within this repo directory (or revise the filepath in cog_merge.py).
+Within FinanceDataFiles_2013-2014, there should be a subdirectory called "2015_Individual_Unit_File" containing the 2015 data files.
+Check all filenames within these directories to ensure that they match the filenames in cog_merge.py, or revise the code file accordingly.
+
+Individual files may change names or locations, and new years may be added, but formats or variable names may change.
+Feel free to reach out if you have any questions about the code or files in this repo, or how to make them work with current
+Census of Governments data files.
+
