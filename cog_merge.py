@@ -12,7 +12,6 @@
 import re, csv
 
 # CHANGE THESE VARIABLES for specific years and U.S. places to merge
-# (Note: command line options to specify these parameters from the shell coming soon)
 
 start_year_fin = 2005
 end_year_fin = 2015
