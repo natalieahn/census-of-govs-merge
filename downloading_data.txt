@@ -26,7 +26,16 @@ Unzip these files to a directory labeled FinanceDataFiles_2013-2014 within this 
 Within FinanceDataFiles_2013-2014, there should be a subdirectory called "2015_Individual_Unit_File" containing the 2015 data files.
 Check all filenames within these directories to ensure that they match the filenames in cog_merge.py, or revise the code file accordingly.
 
-Individual files may change names or locations, and new years may be added, but formats or variable names may change.
+2013 - 2016 (Employment):
+https://www.census.gov/programs-surveys/apes/data/datasets.html
+
+The Employment data files for recent years now appear to be accessible from this page; the 2016 link provides a single zip file for All
+Available Data (https://www2.census.gov/programs-surveys/apes/datasets/2016/annual-apes/2016_downloadable_data.zip), inside of which
+are the 16empid.txt and 16empst.txt files used in the cog_merge.py code. You will probably need to change the directory names
+either in your file structure after unzipping, or in the relevant filepaths in cog_merge.py.
+
+General Note:
+Individual files may change names or locations, and new years may be added, but with different formats or variable names.
 Feel free to reach out if you have any questions about the code or files in this repo, or how to make them work with current
 Census of Governments data files.
 
