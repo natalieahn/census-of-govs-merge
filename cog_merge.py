@@ -21,7 +21,7 @@ end_year_emp = 2016
 place_types_to_include = ['Municipality'] # To specify only certain place types
 # Place type options: 'State', 'County', 'Municipality', 'Township', 'Special District', 'Independent School District'
 
-cog_dir = "Documents/cogmerge/" # Change to wherever you save this repo plus COG data files
+cog_dir = "./" # Change to wherever you save this repo plus COG data files
 fin_output_filename = cog_dir+'fin_data_merged.csv' # Change only if desired
 emp_output_filename = cog_dir+'emp_data_merged.csv' # Change only if desired
 sample_fips_codes_file = None # Change if you want to specify only certain places
